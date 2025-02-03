@@ -7,7 +7,35 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia dicta officiis adipisci architecto, debitis inventore omnis quos quaerat enim repudiandae aliquam animi corrupti, amet laboriosam provident quisquam commodi quae laborum!
+    <div class="calculadora">
+        <input type="text" id="pantalla" disabled>
+        
+        <div class="botones">
+            
+            <button onclick="borrarTodo()">C</button>
+            <button onclick="borrarUno()">←</button>
+            <button onclick="agregarValor('/')">/</button>
+            <button onclick="agregarValor('*')">*</button>
+
+            <button onclick="agregarValor('7')">7</button>
+            <button onclick="agregarValor('8')">8</button>
+            <button onclick="agregarValor('9')">9</button>
+            <button onclick="agregarValor('-')">-</button>
+
+            <button onclick="agregarValor('4')">4</button>
+            <button onclick="agregarValor('5')">5</button>
+            <button onclick="agregarValor('6')">6</button>
+            <button onclick="agregarValor('+')">+</button>
+
+            <button onclick="agregarValor('1')">1</button>
+            <button onclick="agregarValor('2')">2</button>
+            <button onclick="agregarValor('3')">3</button>
+            <button onclick="calcularResultado()">=</button>
+
+            <button onclick="agregarValor('0')" class="cero">0</button>
+            <button onclick="agregarValor('.')">.</button>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
